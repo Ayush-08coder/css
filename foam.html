@@ -1,1 +1,16 @@
-
+<html>
+  <head>
+    <title>Form Validation</title>
+    <script>
+      function validateform(){
+        var firstname=document.myform.fname.value;
+        var lastname = document.myform.lname.value;
+        var email = document.myform.email.value;
+        
+        if(firstname==null&&firstname==""){
+          alert("Name can't be blank");
+          return false;
+        }
+        else if (lastname.length<6){
+          alert("Last Name must be at least 6 characters long.");
+          return false
