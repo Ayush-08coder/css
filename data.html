@@ -30,5 +30,15 @@
 
 
 <?php
-$connection = mysql_connect("localhost","root","");
+$connection=mysql_connect("sql12.freesqldatabase.com","sql12323759","KtVTu4mcwp");
+$db = mysql_select_db("sql12323759",$connection);
+Server
+if(isset($_POST['submit'])){
+$name=$_POST['name'];
+$email=$-POST['email'];
+$contact=$_POST['contact'];
+$address=$_POST['address'];
+if($name!="&&$email!="){
+$query=mysql_query("Create Tainsert into students(student_name
+ 
          
